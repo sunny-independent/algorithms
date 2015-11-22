@@ -44,7 +44,7 @@ function getCandyForThisIndex(score, result, index) {
     var cValue = score[index];
     var rValue = score[index + 1];
 
-    if (cValue <= lValue && cValue <= rValue) { //6,1,7
+    if (cValue <= lValue && cValue <= rValue) { //6,1,7 or 6,6,6
         return 1;
     } else if (cValue <= lValue && cValue > rValue) { //5,4,3
         if (result[rIndex] == 0) {
